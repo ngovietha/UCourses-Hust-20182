@@ -18,6 +18,7 @@ sau "clone" là đường dẫn của project.
 ### 2.2 Báo git nhận thay đổi file
 
 > git stage .
+
 > git commit -m "Your message go here"
 > 
 
@@ -49,10 +50,15 @@ Trong 1 project thì người ta chia các branch ra làm việc cho nó rõ rà
 
 Ví dụ ở project mình hiện đang có 1 số branch sau:
 > *master
+
 > dev
+
 > dev_auth
+
 > dev_categories
+
 > ...
+
 > 
 
 **Khi ở các branch khác nhau thì commit, pull, push vẫn như hướng dẫn bên trên. Đừng làm khác ^^**
@@ -98,6 +104,7 @@ Ví dụ nhánh dev_auth đã làm xong, người dùng đã có thể login, re
 Để merge code từ nhánh dev_auth sang nhánh dev làm như sau:
 
 > git checkout dev (Sang nhánh dev)
+
 > git merge dev_auth (Đưa code nhánh dev_auth vào nhánh dev)
 
 
