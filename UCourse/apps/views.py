@@ -4,9 +4,9 @@ from .models import Account
 import bcrypt
 # Create your views here.
 
-def signin(request):
+def signup(request):
     if request.method =="GET":
-        return render(request,"signin.html")
+        return render(request,"signup.html")
     elif request.method =="POST":
         passw = request.POST.get("pass",None)
         Account.objects.create(
