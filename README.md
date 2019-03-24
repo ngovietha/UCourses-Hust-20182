@@ -1,5 +1,10 @@
 # UCourse - HUST - 20182
 
+---
+
+**KHI LÀM VIỆC MỌI NGƯỜI CHỈ CODE TRÊN NHÁNH DEV VÀ CÁC NHÁNH CON CỦA DEV, KHÔNG CODE TRÊN NHÁNH MASTER. TRƯỚC KHI CODE CHẠY LỆNH "git branch" ĐỂ BIẾT MÌNH ĐANG Ở NHÁNH NÀO.**
+
+**VÀO FILE GIT - USING_GUIDE.md CÓ HƯỚNG DẪN LÀM VIỆC VỚI CÁC BRANCH ĐÓ.**
 
 ---
 
