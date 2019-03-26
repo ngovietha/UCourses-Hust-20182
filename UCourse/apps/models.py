@@ -6,8 +6,8 @@ from django.contrib.auth.models import User
 
 #This class using for Profile of User
 class UserProfile(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key = true)
-    avatar_upload = models.ImageField(upload_to="/UserProfile/") #this field using for upload image and convert this image to avatar_link
+    user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key = True)
+    avatar_upload = models.ImageField(upload_to="UserProfile/") #this field using for upload image and convert this image to avatar_link
     avatar_link = models.CharField(max_length = 255)
     headline = models.CharField(max_length = 255)
     biography = models.TextField()
