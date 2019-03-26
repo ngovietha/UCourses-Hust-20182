@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Account
-import bcrypt
+from django.contrib.auth.models import User
 # Create your views here.
 
 def signup(request):
@@ -20,4 +19,10 @@ def signup(request):
             "all" : all_account
         })
         
-        
+def login(request):
+    if request.method == "GET":
+        return render(request, "signin.html")
+    
+    if request.method == "POST":
+
+        return render(request, "homepage.html")
