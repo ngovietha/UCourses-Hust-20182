@@ -9,45 +9,43 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <style>
-            
+
             div{
                 display: block;
             }
-            .header-link-color{
-                color:#222;
-            }
-            h1,h2,h3,h4,p{
+            h1,h2,h3,h4,h5,h6,p{
                 font-family: inherit;
             }
-
-            h4{
-                padding-top:20px;
-                font-weight:800;
+            .link-black{
+                color: black;
             }
-            .list-group-item{
+            .list-group-item-fix{
+                font-size: 12px;
                 letter-spacing: 2px; 
-                font-weight: 700;
+                font-weight: 400;
                 border:0px !important;
-                background-color: black !important; 
+                background-color: #333 !important; 
                 padding-bottom: 10px;
                 padding-top: 10px;
             }
-
-            h4,h1,.title, .link-color{
-                color: #f8f8f8 ;            
+            .bright-text, .link-color{
+                color: #f8f8f8;            
             }
-
-            a:hover, li a:hover{
-                color: green;
+            .bright-text{
+                font-weight: 700;
+            }
+            a:hover{
+                color: #ccc;
             } 
             a:link{
                 text-decoration: none;
             }
-
             .title{
                 margin:50px;
                 font-weight:800;
@@ -55,115 +53,105 @@
                 text-align: center;               
             }
             .widget{
-                margin: 30px 0px 0px;
+                margin-bottom: 20px;
                 background-color: #fff;
                 padding:10px 20px 10px;
                 box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
-            }
-            .course-item{
-                margin:0px 0px 10px;
-                background-color: #fff;
-                padding:15px 20px;
-
-            }
-            .course-group{
+            }           
+            .course-list-aria{
                 margin-top:30px;
                 width:100%;
-
             }
-            .widget-title{
-                font-size: 22px;
-                font-weight: 600;
+            .widget-title{                
+                font-weight: 700;
                 letter-spacing: 1px;
                 text-transform: uppercase;
-                line-height: normal;
-                margin-bottom: 25px;
-                font-family: inherit;
-            }
-            .small-text{
-                font-size: 10px;
-                color: #999;                
-            }
-            .btn-fix, .btn-link {
-                background: #28a745!important;
-                color:#fff;
-                font-family: inherit;
-                height:40px;
-                border-radius: 2px;
-
-            }
-            .btn-link{                                
-                
-                font-size: 14px;
-                text-align: center;
-                padding-top: 9px;
-            }
-            .thumbnail-fix{
-                width:100%;
-                height:100px;
-            }
-            .float-right{
-                margin-left: 65%;
-            }
-            .newCourse-group{
-                margin-bottom: 20px;
-            }
+                line-height: normal;                
+            }                     
             .course-name{
                 font-weight: 700;
                 font-size: 20px;
             }
-            select{
-                background: #fff;
-                font-family: inherit;
-                height:40px;
-            }
+
             .black-page{
-                background-color: black;                
+                background-color: #333;
+                padding-top: 60px;
+                padding-bottom: 50px;
+                text-align: center;
             }
             .bright-page{
                 background: #eee;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }           
+            .course-item-aria{
+                margin-left: 30px;
+                width: 270px;
             }
-            .btn-link-permanent{
-                margin: 8px 10px;
-                width: 100px;
+            .course-item{
+                border: 1px ;
+                border-radius: 3px ;
+                box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+                padding-bottom: 30px;
+            }           
+            .img-course{
+                width:100%;
+                height:100px;
+                object-fit: cover;
             }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
+            .course-name{
+                font-size: 15px;
+                font-weight: 500;
+            }
+            .course-member{
+                font-size: 10px;
+                color: #999;                
+            }
+            .course-link{
+                padding: 5px 5px 5px;
+                font-size: 12px;
+                color: #fff;              
+                background: #28a745;
+            }
+            .course-link:hover{
+                background: #3e8f3e;
+            }
+        </style>        
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <nav class="bright-page" >
-            <div class="container">
-                <div>                   
-                    <a class="navbar-brand header-link-color"  href="#">UCourse</a>
-                    <a class="navbar-brand header-link-color"  href="#">Danh mục khóa học</a>
-                </div>
-                <div class="col-md-6">
-                    <form>
-                        <div class="navbar-form">
-                            <input type="search" style="width:80%;height:40px;border-radius: 0" class="form-control" placeholder="Tìm kiếm khóa học">
-
-                            <input type="button" class="btn btn-fix" value="Tìm kiếm">
-                        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="padding-left: 30px">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="trangChu.html">UCOURSE <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Category
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Music</a>                            
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" style="width:500px;height:40px;border-radius: 5px" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success " type="submit">Tìm kiếm</button>
                     </form>
-                </div> 
-                <div>                  
-                    <a class="navbar-brand btn-link btn-link-permanent" href="#">Đăng nhập</a>
-                    <a class="navbar-brand btn-link btn-link-permanent" href="#">Đăng ký</a>                       
+                    <div style="margin-left: 600px">
+                        <a class="btn btn-outline-success mr-sm-2" href="#">Đăng ký</a>
+                        <a class="btn btn-success " href="#">Đăng nhập</a>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="black-page">
-            <div class="container" >
-                <div>
-                    <h1 class="title" >DANH SÁCH KHOÁ HỌC</h1>
-                </div>
-            </div>
+            <h3 class="bright-text">DANH SÁCH KHÓA HỌC</h3>
         </div>
         <div class="bright-page">
             <div class="container">
@@ -173,156 +161,213 @@
                             <div class="row">
                                 <div class="col-md-9">
                                     <form>
-                                        <div>                                   
-                                            <select name="danhMuc">
-                                                <option value="0">Tất cả danh mục</option>
-                                                <option value="1">Free</option>
-                                            </select> 
-                                            <select name="sapXep">
-                                                <option value="0">Sắp xếp</option>
-                                                <option value="1">Mới nhất</option>
-                                                <option value="2">Nhiều nhất</option>
-                                            </select>   
-                                            <input type="button" class="btn btn-fix" value="Tìm kiếm">
+                                        <div class="form-row align-items-center">
+                                            <div class="col-sm-3 my-1">
+                                                <select class="form-control">
+                                                    <option value="" disabled selected>Thể loại</option>
+                                                    <option value="1">Mucsic</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-3 my-1">
+                                                <select class="form-control">
+                                                    <option value="" disabled selected>Sắp xếp</option>
+                                                    <option value="1">Mới nhất</option>
+                                                    <option value="2">Nhiều nhất</option>
+                                                </select>  
+                                            </div>                                           
+                                            <div class="col-auto my-1">
+                                                <button type="submit" class="btn btn-outline-success">Tìm kiếm</button>
+                                            </div>
                                         </div>
                                     </form>
-                                </div>
-                                <div class="col-md-3">
-                                    <div style="margin-left: 40px;">
-                                        <a href="#" class="btn btn-link">Tất cả khóa học</a>
-                                    </div>
-                                </div>
+                                </div>                               
                             </div>
                         </div>
-                        <div class="course-group">
-                            <div class="col-sm-4">
-                                <div class="course-item">
-                                    <img src="html.png" alt="blank" class="thumbnail thumbnail-fix" />
-                                    <p style="font-weight: 700;">Khóa học 1</p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
-                                    <a href="#" class="btn btn-link float-right">Chi tiết</a>
+
+                        <div class="course-list-aria">
+                            <div class="row">
+                                <div class="col-sm-4" style="margin-bottom: 20px">                                
+                                    <div class="course-item" style="background: #fff">                          
+                                        <img src="img/tngh.jpg" alt="blank" class="img-course"/>
+                                        <div style="padding: 15px 10px;">                          
+                                            <p class="course-name">Khóa học 1</p>
+                                            <div style="margin-top: 20px; padding-top: 10px">
+                                                <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                            </div>                           
+                                            <div style="float: right">
+                                                <a href="#"><p class="course-link">Ghi danh</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="course-item">
-                                    <img src="css.png" alt="blank" class="thumbnail thumbnail-fix" />
-                                    <p style="font-weight: 700;">Khóa học 2</p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
-                                    <a href="#" class="btn btn-link float-right">Chi tiết</a>
+                                <div class="col-sm-4" style="margin-bottom: 20px">                                
+                                    <div class="course-item" style="background: #fff">                          
+                                        <img src="img/tngh.jpg" alt="blank" class="img-course"/>
+                                        <div style="padding: 15px 10px;">                          
+                                            <p class="course-name">Khóa học 1</p>
+                                            <div style="margin-top: 20px; padding-top: 10px">
+                                                <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                            </div>                           
+                                            <div style="float: right">
+                                                <a href="#"><p class="course-link">Ghi danh</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="course-item">
-                                    <img src="js.png" alt="blank" class="thumbnail thumbnail-fix" />
-                                    <p style="font-weight: 700;">Khóa học 3</p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
-                                    <a href="#" class="btn btn-link float-right">Chi tiết</a>
+                                <div class="col-sm-4" style="margin-bottom: 20px">                                
+                                    <div class="course-item" style="background: #fff">                          
+                                        <img src="img/tngh.jpg" alt="blank" class="img-course"/>
+                                        <div style="padding: 15px 10px;">                          
+                                            <p class="course-name">Khóa học 1</p>
+                                            <div style="margin-top: 20px; padding-top: 10px">
+                                                <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                            </div>                           
+                                            <div style="float: right">
+                                                <a href="#"><p class="course-link">Ghi danh</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="course-item">
-                                    <img src="java.png" alt="blank" class="thumbnail thumbnail-fix" />
-                                    <p style="font-weight: 700;">Khóa học 4</p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
-                                    <a href="#" class="btn btn-link float-right">Chi tiết</a>
+                                <div class="col-sm-4" style="margin-bottom: 20px">                                
+                                    <div class="course-item" style="background: #fff">                          
+                                        <img src="img/tngh.jpg" alt="blank" class="img-course"/>
+                                        <div style="padding: 15px 10px;">                          
+                                            <p class="course-name">Khóa học 1</p>
+                                            <div style="margin-top: 20px; padding-top: 10px">
+                                                <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                            </div>                           
+                                            <div style="float: right">
+                                                <a href="#"><p class="course-link">Ghi danh</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="course-item">
-                                    <img src="sql.png" alt="blank" class="thumbnail thumbnail-fix" />
-                                    <p style="font-weight: 700;">Khóa học 5</p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
-                                    <a href="#" class="btn btn-link float-right">Chi tiết</a>
+                                <div class="col-sm-4" style="margin-bottom: 20px">                                
+                                    <div class="course-item" style="background: #fff">                          
+                                        <img src="img/tngh.jpg" alt="blank" class="img-course"/>
+                                        <div style="padding: 15px 10px;">                          
+                                            <p class="course-name">Khóa học 1</p>
+                                            <div style="margin-top: 20px; padding-top: 10px">
+                                                <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                            </div>                           
+                                            <div style="float: right">
+                                                <a href="#"><p class="course-link">Ghi danh</p></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="widget">
-                            <h3 class="widget-title">KHÓA HỌC MỚI</h3>
-                            <div class="row newCourse-group">
+                            <div style="padding-bottom: 15px">
+                                <h5 class="widget-title">KHÓA HỌC MỚI</h5>
+                            </div>
+                            <div class="row" style="margin-bottom: 20px">
                                 <div class="col-sm-4">
-                                    <img src="html.png" alt="" style="height: 60px; width:100%"/>   
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
                                 </div>
                                 <div class="c0l-sm-8">
-                                    <p class="course-name">
-                                        <a class="header-link-color" href="#">Html</a>                                    
-                                    </p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                    <a class="link-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
                                 </div>
-
                             </div>
-                            <div class="row newCourse-group">
+                            <div class="row" style="margin-bottom: 20px">
                                 <div class="col-sm-4">
-                                    <img src="css.png" alt="" style="height: 60px; width:100%"/>   
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
                                 </div>
                                 <div class="c0l-sm-8">
-                                    <p class="course-name">
-                                        <a class="header-link-color" href="#">Css</a>
-                                    </p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                    <a class="link-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
                                 </div>
                             </div>
-                            <div class="row newCourse-group">
+                            <div class="row" style="margin-bottom: 20px">
                                 <div class="col-sm-4">
-                                    <img src="js.png" alt="" style="height: 60px; width:100%"/>   
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
                                 </div>
                                 <div class="c0l-sm-8">
-                                    <p class="course-name">
-                                        <a class="header-link-color" href="#">Javascrip</a>
-                                    </p>
-                                    <p class="small-text"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                    <a class="link-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
                                 </div>
-
                             </div>
-
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-sm-4">
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
+                                </div>
+                                <div class="c0l-sm-8">
+                                    <a class="link-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-sm-4">
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
+                                </div>
+                                <div class="c0l-sm-8">
+                                    <a class="link-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                </div>
+                            </div>
                         </div>
                         <div class="widget">
-                            <h3 class="widget-title">DANH MỤC</h3>
-                            <a href="#" class="header-link-color" style="font-weight: 500;"><span class="glyphicon glyphicon-link" style="margin-right:20px;"></span>Free</a>
-                        </div>
-                        <div class="widget" style="margin-bottom:20px;">
-                            <h3 class="widget-title">THỐNG KÊ</h3>
-                        </div>
+                            <div style="padding-bottom: 15px">
+                                <h5 class="widget-title">DANH MỤC</h5>
+                            </div>
+                            <a href="#" class="link-black" style="font-weight: 500;"><span class="glyphicon glyphicon-link mr-3" ></span>Free</a>
+                        </div>                       
                     </div>
                 </div>
             </div>
         </div>
-        <footer class="black-page">
-            <div class="container" >
-                <div class="row">
+        <footer style="background-color: #333;">
+            <div class="container">
+                <div class="row">                   
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h1 style="font-weight:900">UCOURSES</h1>
+                        <div style="margin-top: 20px">
+                            <h3 class="bright-text">UCOURSES</h3>
+                        </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>MENU</h4>
-                        <hr>
-                        <ul class="list-group">
-                            <li class="list-group-item"><a class="link-color" href="#">Trang chủ</a></li>
-                            <li class="list-group-item"><a class="link-color" href="#">Danh sách khóa học</a></li>
-                            <li class="list-group-item"><a class="link-color" href="#">Tags</a></li>
-                        </ul>
+                        <div style="margin-top: 20px; margin-bottom: 30px">
+                            <h6 class="bright-text">MENU</h6>
+                            <hr style="border-bottom: 1px solid #fff;">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-fix"><a class="link-color" href="#">Trang chủ</a></li>
+                                <li class="list-group-item list-group-item-fix"><a class="link-color" href="#">Danh sách khóa học</a></li>
+                                <li class="list-group-item list-group-item-fix"><a class="link-color" href="#">Tags</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
-                        <h4>CONTACT</h4>
-                        <hr>
-                        <ul class="list-group">
-                            <li class="list-group-item"><a class="link-color" href="#">Điện thoại</a></li>
-                            <li class="list-group-item"><a class="link-color" href="#">Địa chỉ</a></li>
-                            <li class="list-group-item"><a class="link-color" href="#">Email</a></li>
-                        </ul>
-                    </div>
-                </div> 
-        </footer><!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+                        <div style="margin-top: 20px; margin-bottom: 40px">
+                            <h6 class="bright-text">CONTACT</h6>
+                            <hr style="border-bottom: 1px solid #fff;">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-fix"><a class="link-color" href="#">Điện thoại</a></li>
+                                <li class="list-group-item list-group-item-fix"><a class="link-color" href="#">Địa chỉ</a></li>
+                                <li class="list-group-item list-group-item-fix"><a class="link-color" href="#">Email</a></li>
+                            </ul>
+                        </div>
+                    </div>                   
+                </div>
+            </div> 
+        </footer>     
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-
-        </script>
     </body>
 </html>
