@@ -1,72 +1,69 @@
-*{
-    margin:0;
-    padding:0;
-    border:none;
-    font-family: 'Open Sans', sans-serif;
+h1,h2,h3,h4,h5,h6,p{
+    font-family: inherit;
 }
-body {
-    overflow: hidden;
-    background-color: #ededed;
+.list-group-item-override{
+    font-size: 12px;
+    letter-spacing: 2px; 
+    font-weight: 400;
+    border:0px !important;
+    background-color: #333 !important; 
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
-.to {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: minmax(100px,auto);
+.bright-text, .link-color-bright{
+    color: #f8f8f8;            
 }
- 
-.form {
-    border: 1px solid #80808000;
-    grid-column: 6/9;
-    grid-row: 3;
-    height: 470px;
-    width: 292px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    border-radius: 15px;
-    box-shadow: 0px 0px 14px 0px grey;
-    background-color: white;
+.bright-text{
+    font-weight: 700;
 }
-h2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
+a:hover{
+    color: #ccc;
+} 
+a:link{
+    text-decoration: none;
 }
-i.fab.fa-app-store-ios {
-    display: block;
-    margin-bottom: 50px;
-    font-size: 28px;
+.home-background{
+    padding: 350px 20px 350px;
+    background-image: url(img/bg.jpg);              
 }
- 
-label {
-    margin-left: -126px;
-    display: block;
-    font-weight: lighter;
- 
+.top-ucourse-aria{
+    padding: 30px ;
 }
-input{
-    display: block;
-    border-bottom: 2px solid #00BCD4;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    outline-style: none;
+.top-ucourse-title{
+    text-align: center; 
+    font-weight: 600;
 }
-input[type="text"] {
-    padding: 5px;
-    width: 70%;
+.top-ucourse-link-aria{
+    text-align: center;
+    padding-top: 20px
 }
- 
-input#submit {
-    padding: 7px;
-    width: 50%;
-    border-radius: 10px;
-    border: none;
-    position: absolute;
-    bottom: 10px;
-    cursor: pointer;
-    background: linear-gradient(to right, #fc00ff, #00dbde);
+.course-link{
+    color: #fff;              
+    background: #28a745;             
+}           
+.course-link{
+    padding: 5px 5px 5px;
+    font-size: 12px;
 }
-input#submit:hover{
- 
-    background: linear-gradient(to right, #fc466b, #3f5efb); 
+.top-ucourse-link:hover, .course-link:hover{
+    background: #3e8f3e;
+}
+.course-item{
+    border: 1px ;
+    border-radius: 3px ;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .15);
+    padding-bottom: 30px;
+}           
+.img-course{
+    width:100%;
+    height:100px;
+    object-fit: cover;
+}
+.course-name{
+    font-size: 15px;
+    font-weight: 500;
+}
+.course-member{
+    font-size: 10px;
+    color: #999;                
 }
