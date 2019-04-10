@@ -30,9 +30,8 @@ def login(request):
 
 def homepage(request):
     if request.method == "GET":
-        return render(request, "homepage.html")
+        return render(request, "home.html")
 
     
 def categories(request):
-    
     return render(request, "categories.html")
