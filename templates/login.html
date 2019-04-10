@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="../static/bootstrap4/css/bootstrap.min.css">
+        <style>
+            body {
+                pading-top:50px;
+                padding-bottom: 30px;
+            }
+            .header-link{
+                color:#222;
+            }
+            h1,h2,h3,h4{
+                font-family: inherit;
+            }
+
+            h4{
+                padding-top:20px;
+                font-weight:800;
+            }
+            .list-group-item{
+                letter-spacing: 2px; 
+                font-weight: 900px;
+                border:0px !important;
+                background-color: black !important; 
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            h4,h1,.title, .link-color{
+                color: #f8f8f8;            
+            }
+            a:hover{
+                color: green;
+            } 
+            a:link{
+                text-decoration: none;
+            }
+
+            .title{
+                margin:50px;
+                font-weight:800;
+                font-size: 30px;
+                text-align: center;               
+            }
+            .widget{
+                margin:30px 0px ;
+                background-color: #fff;
+                padding:15px 20px;
+
+            }
+            .widget-title{
+                font-size: 22px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                line-height: normal;
+                margin-bottom: 25px;
+                font-family: inherit;
+            }
+            select{
+                background: #fff;
+                font-family: inherit;
+                height:40px;
+
+            }
+            .btn-fix, .btn-a{
+                background: #28a745;
+                color:#fff;
+                font-family: inherit;
+                height:40px;
+                border-radius: 2px;
+            }
+            .btn-a{                                
+                margin: 8px 10px;
+                font-size: 14px;
+                text-align: center;
+                padding-top: 10px !important;
+                width: 100px;
+            }
+            .black-page{
+                background-color: black;                
+            }
+            .bright-page{
+                background: #fff;
+            }
+            .course-group{
+                margin-top: 40px;
+
+            }
+            .course-wrap{
+                margin-bottom:20px;
+                line-height: 2;
+
+            }
+        </style>
+        <link rel="stylesheet" href="../static/bootstrap4/css/bootstrap-theme.min.css">
+        <script src="../static/bootstrap4/js/bootstrap.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav style="background: #eee;" >
+            <div class="container">
+                <div>                   
+                    <a class="navbar-brand header-link"  href="#">UCourse</a>
+                    <a class="navbar-brand header-link"  href="#">Danh mục khóa học</a>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="navbar-form">
+                            <input type="search" style="width:80%;height:40px;border-radius: 0" class="form-control" placeholder="Tìm kiếm khóa học">
+
+                            <input type="button" class="btn btn-fix" value="Tìm kiếm">
+                        </div>
+                    </form>
+                </div>              
+                <a class="navbar-brand btn-a"  href="#">Đăng nhập</a>
+                <a class="navbar-brand btn-a"  href="#">Đăng ký</a>               
+            </div>
+        </nav>
+        <div class="black-page">
+            <div class="container" >
+                <div>
+                    <h1 class="title" >Đăng Nhập</h1>
+                </div>
+            </div>
+        </div> 
+        <form class="form-horizontal" method="post" name="formLogin">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <label class="control-label col-md-2">Địa chỉ Email</label>
+                <div class="col-md-6">
+                    <input type="name" name="txtUser" class="form-control" placeholder="Email">
+                </div>   
+            </div>
+            <div class="row" style="margin-top: 20px">
+                <div class="col-md-2"></div>
+                <label class="control-label col-md-2">Mật khẩu</label>
+                <div class="col-md-6">
+                    <input type="password" name="txtPassword" class="form-control" placeholder="Mật khẩu">
+                </div>   
+            </div>    
+            <div class="row" style="margin-top: 20px; margin-bottom: 50px;">
+                <div class="col-md-6"></div>
+                <div class="col-md-2">    
+                    <button type="submit" name="btnLogin" class="navbar-brand btn-a">Đăng Nhập</button>
+                </div>
+            </div>
+        </form>    
+        <footer class="black-page">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h1 style="font-weight:900">UCOURSES</h1>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h4>MENU</h4>
+                        <hr>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a class="link-color" href="#">Trang chủ</a></li>
+                            <li class="list-group-item"><a class="link-color" href="#">Danh sách khóa học</a></li>
+                            <li class="list-group-item"><a class="link-color" href="#">Tags</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <h4>CONTACT</h4>
+                        <hr>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a class="link-color" href="#">Điện thoại</a></li>
+                            <li class="list-group-item"><a class="link-color" href="#">Địa chỉ</a></li>
+                            <li class="list-group-item"><a class="link-color" href="#">Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+        </footer><!-- /container -->        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../static/js/jquery.min.js"><\/script>')</script>
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+
+        </script>
+    </body>
+</html>
+
