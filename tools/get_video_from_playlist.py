@@ -10,6 +10,7 @@ def get_playlist_links(playlist_url):
     ydl_opts = {}
     with dowloader.YoutubeDL(ydl_opts) as ydl:
         meta = ydl.extract_info(playlist_url, download=False)
+    print("Extract data completed!")
     return True
 
 def check_is_youtube_link(playlist_link, parser):

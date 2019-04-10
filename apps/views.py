@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 def signup(request):
     if request.method =="GET":
-        return render(request,"signup.html")
+        return render(request,"dangky.html")
     elif request.method =="POST":
         passw = request.POST.get("pass",None)
         # User.objects.create(
@@ -22,7 +22,7 @@ def signup(request):
 def login(request):
     if request.method == "GET":
 
-        return render(request, "login.html")
+        return render(request, "dangnhap.html")
     
     if request.method == "POST":
 
@@ -33,5 +33,24 @@ def homepage(request):
         return render(request, "home.html")
 
     
-def categories(request):
+def categories(request, pk):
     return render(request, "categories.html")
+
+def course_learn(request, pk):
+    return render(request, "course_learning.html")
+
+def setting(request):
+    return render(request, "base.html")
+
+def my_course(request):
+    return render(request, "base.html")
+
+def courses_list(request):
+    return render(request, "base.html")
+
+def course_detail(request, pk):
+    return render(request, "base.html")
+
+def course_detail_enroll(request, pk):
+    return render(request, "base.html")
+
