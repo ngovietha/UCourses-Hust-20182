@@ -1,9 +1,6 @@
 from apps import views
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 urlpatterns = [
-      url(r"^$", views.homepage),
-      url(r"^login$", views.login),
-      url(r"^register$", views.signup),
+    url(r'^categories$', views.categories, name = "home"),
 ]
-
