@@ -34,5 +34,4 @@ def homepage(request):
 
     
 def categories(request):
-    
     return render(request, "categories.html")
