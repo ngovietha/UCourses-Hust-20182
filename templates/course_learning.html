@@ -1,8 +1,6 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<!DOCTYPE html>
+
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -12,112 +10,174 @@
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="../static/style.css" rel="stylesheet" type="text/css"/>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/usm/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <style>
+            
+        </style>
     </head>
-    <body>              
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-bottom: 0; padding-left: 50px">
-            <a class="navbar-brand" href="/">UCourses</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">                  
-                <ul class="navbar-nav mr-2">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Categories
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="category.html">Music</a>                            
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline mr-auto">
-                    <input class="form-control mr-sm-2" type="search" size="80" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success " type="submit">Search</button>
-                </form>
-                <div style="padding-right: 50px">
-                    <a class="btn btn-outline-success mr-sm-2" href="#">Đăng nhập</a>
-                    <a class="btn btn-success " href="#">Đăng ký</a>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="container-fluid mt-3 mb-4">
-            <div class="row">
-            <div class='col-md-8'>
-                <div class='w-100 bg-success py-2 px-3 mb-2' style="background-color: #28A745">
-                    <h5 class='text-light'>Gintama</h5>
-                </div>
-                <div id="cảouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <iframe width="100%" height="470px" src="https://www.youtube.com/embed/xbuhz4DAo_M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
-                        </div>
-                    </div>
-                </div>
-                <a class="btn btn-success" href="#carouselExampleIndicators" role="button" data-slide="prev">Previous</a>
-                <a class="btn btn-success" href="#carouselExampleIndicators" role="button" data-slide="next">Next</a>
-            </div>
-
-            <div class='col-md-4'>
-               <div class="w-100 bg-success py-2 px-3 mb-2">
-                   <h5 class="text-light">
-                       <i class="fas fa-align-left mr-2"></i>
-                       "Đề Cương"
-                   </h5>
-               </div>
-              <div class="p-2" style="height: 500px; overflow: scroll;">
-                        <div class="border p-3 w-100">
-                            <a data-target="#carouselExampleIndicators" data-slide-to="0" class="w-100" href="">Bài 1: Gintama Ending 17 Full『SPYAIR Samurai Heart Some Like It Hot!!』</a>
-                        </div> 
-                </div> 
-            </div>
-        </div>   
-
-        <footer style="background-color: #333;">
+    <body>       
+        <div class="black-page">
+            <h3 class="bright-text">CHI TIẾT KHÓA HỌC</h3>
+        </div>
+        <div class="bright-page">
             <div class="container">
-                <div class="row">                   
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div style="margin-top: 20px">
-                            <h3 class="bright-text">UCOURSES</h3>
+                <div class="row">
+                    <div class="col-sm-8">                        
+                        <div class="widget">
+                            <h3 class="widget-title">Khóa học 1</h3>
+                            <div class="row" style="padding:20px 20px">
+                                <h4 class="mr-3" style="padding-top:5px">Miễn Phí </h4>                              
+                                <a href="#" class="btn btn-success" style="border-radius: 0;padding: 10px 40px 10px">Ghi danh</a>
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <img width="100%" height="450" src="img/bg.jpg" alt="blank" style="object-fit: cover"/>
+                        </div>
+                        <div class="course-tab">                            
+                            <ul class="nav learn-press-nav-tab nav-pills " role="tablist" >
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-override active" id="pills-overviews-tab" data-toggle="tab" href="#pills-overviews" role="tab" aria-controls="pills-overviews" aria-selected="true">Tổng quan</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-override" id="pills-curriculum-tab" data-toggle="tab" href="#pills-curriculum" role="tab" aria-controls="pills-curriculum" aria-selected="false">Đề cương khóa học</a>
+                                </li>
+
+
+                            </ul>
+                            <div class="tab-content" style="padding:30px">
+                                <div id="pills-overviews" class="container tab-pane active">
+                                    <div class="row">
+                                        <div class="col-sm-7" style="border-right: 1px solid #ddd;">
+                                            <p>đây là tổng quan khóa học</p>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <h4>Số liệu khóa học</h4>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <i class="fas fa-users mr-2 text-success"></i>
+                                                    <span>Học viên</span>
+                                                    <span class="course-info-value">1 học viên</span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fas fa-clock mr-2 text-success"></i>
+                                                   <span>Thời lượng </span>
+                                                   <span class="course-info-value">3 phút </span>
+                                                <li class="list-group-item">
+                                                    <i class="fas fa-level-up-alt mr-2 text-success"></i>
+                                                   <span>Cấp độ </span>
+                                                    <span class="course-info-value">Tất cả</span>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <i class="fas fa-language mr-2 text-success"></i>  
+                                                    <span>Ngôn ngữ</span>
+                                                    <span class="course-info-value">Tiếng Việt</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="pills-curriculum" class="container tab-pane fade">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <i class="fab fa-youtube text-danger"></i>
+                                            <span >đề cương khóa học</span>
+                                            <span class="item-meta duration">0:03:10
+                                                <i class="fas fa-unlock"></i>
+                                            </span>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <i class="fab fa-youtube text-danger"></i>
+                                            <span >đề cương khóa học</span>
+                                            <span class="item-meta duration">0:03:10
+                                                <i class="fas fa-unlock"></i>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div style="margin-top: 20px; margin-bottom: 30px">
-                            <h6 class="bright-text">MENU</h6>
-                            <hr style="border-bottom: 1px solid #fff;">
-                            <ul class="list-group">
-                                <li class="list-group-item list-group-item-override"><a class="link-color-bright" href="#">Trang chủ</a></li>
-                                <li class="list-group-item list-group-item-override"><a class="link-color-bright" href="#">Danh sách khóa học</a></li>
-                                <li class="list-group-item list-group-item-override"><a class="link-color-bright" href="#">Tags</a></li>
-                            </ul>
+                    <div class="col-sm-3">
+                        <div class="widget">
+                            <div style="padding-bottom: 15px">
+                                <h5 class="widget-title">KHÓA HỌC MỚI</h5>
+                            </div>
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-sm-4">
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
+                                </div>
+                                <div class="c0l-sm-8">
+                                    <a class="link-color-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-sm-4">
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
+                                </div>
+                                <div class="c0l-sm-8">
+                                    <a class="link-color-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-sm-4">
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
+                                </div>
+                                <div class="c0l-sm-8">
+                                    <a class="link-color-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-sm-4">
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
+                                </div>
+                                <div class="c0l-sm-8">
+                                    <a class="link-color-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-bottom: 20px">
+                                <div class="col-sm-4">
+                                    <img src="img/bg.jpg" alt="" style="height: 60px; width:100%"/>   
+                                </div>
+                                <div class="c0l-sm-8">
+                                    <a class="link-color-black" href="#">
+                                        <p class="course-name">Khóa học 1</p>                                    
+                                    </a>
+                                    <p class="course-member"><span class="glyphicon glyphicon-user"></span> 0 học viên</p>
+                                </div>
+                            </div>
                         </div>
+                        <div class="widget">
+                            <div style="padding-bottom: 15px">
+                                <h5 class="widget-title">DANH MỤC</h5>
+                            </div>
+                           
+                                
+                                    <a href="#" class="link-color-black" style="font-weight: 500"> <i class="fab fa-android mr-3"></i>Music</a>
+                               
+                                 
+                       
+                        </div>                       
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div style="margin-top: 20px; margin-bottom: 40px">
-                            <h6 class="bright-text">CONTACT</h6>
-                            <hr style="border-bottom: 1px solid #fff;">
-                            <ul class="list-group">
-                                <li class="list-group-item list-group-item-override"><a class="link-color-bright" href="#">Điện thoại</a></li>
-                                <li class="list-group-item list-group-item-override"><a class="link-color-bright" href="#">Địa chỉ</a></li>
-                                <li class="list-group-item list-group-item-override"><a class="link-color-bright" href="#">Email</a></li>
-                            </ul>
-                        </div>
-                    </div>                   
                 </div>
-            </div> 
-        </footer>
+            </div>
+        </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+        
     </body>
 </html>
